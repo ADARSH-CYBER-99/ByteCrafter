@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByteCrafter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>ByteCrafter</h1>
+    <p class="subheading">Your Ultimate Number Conversion Toolbox</p>
+
+    <div class="container">
+      <!-- Binary Input -->
+      <div class="converter-box bin">
+        <label>Binary</label>
+        <input id="binary" type="text" placeholder="Enter Binary" />
+        <select id="binary-select">
+          <option value="toDecimal">To Decimal</option>
+          <option value="toHex">To Hexadecimal</option>
+          <option value="toOctal">To Octal</option>
+        </select>
+      </div>
+
+      <!-- Hexadecimal Input -->
+      <div class="converter-box hex">
+        <label>Hexadecimal</label>
+        <input id="hex" type="text" placeholder="Enter Hex" />
+        <select id="hex-select">
+          <option value="toDecimal">To Decimal</option>
+          <option value="toBinary">To Binary</option>
+          <option value="toOctal">To Octal</option>
+        </select>
+      </div>
+
+      <!-- Octal Input -->
+      <div class="converter-box oct">
+        <label>Octal</label>
+        <input id="octal" type="text" placeholder="Enter Octal" />
+        <select id="octal-select">
+          <option value="toDecimal">To Decimal</option>
+          <option value="toBinary">To Binary</option>
+          <option value="toHex">To Hexadecimal</option>
+        </select>
+      </div>
+
+      <!-- Decimal Input -->
+      <div class="converter-box dec">
+        <label>Decimal</label>
+        <input id="decimal" type="text" placeholder="Enter Decimal" />
+        <select id="decimal-select">
+          <option value="toBinary">To Binary</option>
+          <option value="toHex">To Hexadecimal</option>
+          <option value="toOctal">To Octal</option>
+        </select>
+      </div>
+
+      <!-- Convert Button -->
+      <div class="converter-box btn">
+        <button onclick="convert()">Convert</button>
+      </div>
+
+      <!-- Clear Button -->
+      <div class="converter-box clr">
+        <button onclick="clearFields()">Clear</button>
+      </div>
+
+      <!-- Result -->
+      <div class="result-box" id="result-box">Result will appear here</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
